@@ -5,12 +5,15 @@ output: html_notebook
 
 ## Here is a Header
 
-Let's use an [HTML widget](http://www.htmlwidgets.org/).
+The RStudio Offices:
 
 ```{r}
 library("leaflet")
-# From `?leaflet::leaflet`
 m <-  leaflet() %>% addTiles()
-m %>% addPopups(-93.65, 42.0285,
-                'Here is the <b>Department of Statistics</b>, ISU')
+Rlogo = file.path(R.home('doc'), 'html', 'logo.jpg')
+m %>% addMarkers(
+  c(-71.0382679, -122.1217866), c(42.3489054, 47.6763144), icon = list(
+    iconUrl = 'http://www.rstudio.com/wp-content/uploads/2014/03/blue-125.png'
+  ), popup = c('RStudio @ Boston', 'RStudio @ Seattle')
+)
 ```
