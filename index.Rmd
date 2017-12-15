@@ -1,7 +1,6 @@
 ---
 title: "R Notebook Website"
 author: "Ruaridh Williamson"
-output: html_notebook
 ---
 
 ### Description

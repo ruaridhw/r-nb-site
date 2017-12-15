@@ -1,0 +1,21 @@
+name: "r-nb-site"
+output_dir: "docs"
+navbar:
+  title: "R Notebook Website"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Page 1"
+      href: 01-page1.html
+    - text: "Page 2"
+      href: 02-page2.html
+  right:
+    - icon: fa-github
+      href: https://github.com/ruaridhw
+output:
+  html_document:
+    theme: yeti
+    highlight: textmate
+    include:
+      after_body: footer.html
+    css: styles.css
