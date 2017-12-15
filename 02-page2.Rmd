@@ -1,0 +1,16 @@
+---
+title: "Page 2"
+output: html_notebook
+---
+
+## Here is a Header
+
+Let's use an [HTML widget](http://www.htmlwidgets.org/).
+
+```{r}
+library("leaflet")
+# From `?leaflet::leaflet`
+m <-  leaflet() %>% addTiles()
+m %>% addPopups(-93.65, 42.0285,
+                'Here is the <b>Department of Statistics</b>, ISU')
+```
